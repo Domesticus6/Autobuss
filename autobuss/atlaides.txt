@@ -1,0 +1,4 @@
+Atlaide invalidiem:4
+Atlaide pensionariem:3
+Atlaide berniem:2
+Atlaide studentiem:1

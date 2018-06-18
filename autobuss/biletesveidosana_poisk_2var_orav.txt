@@ -1,0 +1,226 @@
+void Klients::Nopirkt_Bileti(string personalID){
+   string numurs, laikss, nauda, uzKurieni;
+    cout<<"Kadu bileti gribi nopirkt?"<<endl;
+    cout<<"1-Vietejies biletes"<<endl;
+    cout<<"2-Starptautiskie biletes"<<endl;
+    int izvele;
+    string line;
+    cin>>izvele;
+    switch(izvele){
+    case 1: {
+        string nosaukums;
+	    nosaukums="saraksts.txt";
+        paraditSarakstu(nosaukums);
+        int izvele;
+		cout<<"Gribi nopirkt bileti? 1-Ja 0-Ne::";
+		cin>>izvele;
+		if(izvele){
+        ifstream saraksts("saraksts.txt");
+        {
+            ofstream sarakstss("sarakstss.txt");
+            int i;
+            i=0;
+                while (getline(saraksts, line)){
+                    i++;
+                    sarakstss<<i<<line<<endl;
+                }
+                saraksts.close();
+                sarakstss.close();
+                    {
+                        ifstream sarakstss("sarakstss.txt");
+                        while(getline(sarakstss,line)){
+                            cout<<line<<endl;
+                        }
+                    }
+        }
+		cout<<"izveles bileti::";
+
+		ifstream sarakstss("sarakstss.txt");
+		int line_number_now;
+		int line_number_chose;
+
+		cin>>line_number_chose;
+		fflush(stdin);
+
+		line_number_now=0;
+		while(getline(sarakstss,line)){
+			line_number_now++;
+			if (line_number_now==line_number_chose){
+				getline(sarakstss,numurs,',');
+				getline(sarakstss,uzKurieni,',');
+				getline(sarakstss,laikss,',' );
+				getline(sarakstss,nauda);
+
+                double out;
+				stringstream st;
+	            st << nauda;
+	            st >> out;
+
+	            double nauda_nauda;
+	            nauda_nauda=out;
+                cout<<nauda_nauda<<endl;
+
+				string konta_numurs;
+	            string nauda_konta;
+	            string nosaukums;
+
+                nosaukums=personalID+"-Konts.txt";
+	            ifstream konts(string(string(nosaukums)).c_str());
+
+	            string s;
+
+	            ofstream output("tempfile.txt");
+	                while (!konts.eof()){
+	                        getline(konts,konta_numurs,',');
+	                        getline (konts, nauda_konta);
+
+                                double outt;
+                                stringstream stt;
+                                stt << nauda_konta;
+                                stt >> outt;
+
+
+                                cout<<outt;
+
+                                if(outt>nauda_nauda){
+									double  summa;
+                                    summa=outt-nauda_nauda;
+                                    cout<<konta_numurs<<endl;
+                                    cout<<summa;
+                                    output<<konta_numurs<<","<<summa;
+                                    time_t rawtime;
+                                    struct tm *timeinfo;
+                                    time ( &rawtime );
+                                    timeinfo = localtime ( &rawtime );
+                                    ofstream vesture("vesture.txt",ios::app);
+                                    vesture<<"Lietotajs "<<nosaukums<<" nopirka bileti"<<","<<uzKurieni<<","<< asctime(timeinfo)<<endl;
+                                }
+                                        else{
+                                            cout<<"Nepietiek lidzekljus"<<endl;
+                                            break;
+                                            }
+                            }
+
+	            konts.close();
+	            output.close();
+	            sarakstss.close();
+	            remove("sarakstss.txt");
+	            remove(nosaukums.c_str());
+	            rename("tempfile.txt",nosaukums.c_str());
+                }
+		}
+
+
+
+		}
+}
+        break;
+    case 2:
+       {
+        string nosaukums;
+	    nosaukums="starp_saraksts.txt";
+        paraditSarakstu(nosaukums);
+        int izvele;
+		cout<<"Gribi nopirkt bileti? 1-Ja 0-Ne::";
+		cin>>izvele;
+		if(izvele){
+        ifstream saraksts("starp_saraksts.txt");
+        {
+            ofstream sarakstss("sarakstss.txt");
+            int i;
+            i=0;
+                while (getline(saraksts, line)){
+                    i++;
+                    sarakstss<<i<<line<<endl;
+                }
+                saraksts.close();
+                sarakstss.close();
+                    {
+                        ifstream sarakstss("sarakstss.txt");
+                        while(getline(sarakstss,line)){
+                            cout<<line<<endl;
+                        }
+                    }
+        }
+		cout<<"izveles bileti::";
+
+		ifstream sarakstss("sarakstss.txt");
+		int line_number_now;
+		int line_number_chose;
+
+		cin>>line_number_chose;
+		fflush(stdin);
+
+		line_number_now=0;
+		while(getline(sarakstss,line)){
+			line_number_now++;
+			if (line_number_now==line_number_chose){
+				getline(sarakstss,numurs,',');
+				getline(sarakstss,uzKurieni,',');
+				getline(sarakstss,laikss,',' );
+				getline(sarakstss,nauda);
+
+                double out;
+				stringstream st;
+	            st << nauda;
+	            st >> out;
+
+	            double nauda_nauda;
+	            nauda_nauda=out;
+                cout<<nauda_nauda<<endl;
+
+				string konta_numurs;
+	            string nauda_konta;
+	            string temp;
+
+                temp=personalID+"-Konts.txt";
+	            ifstream konts(string(string(temp)).c_str());
+
+	            ofstream output("tempfile.txt");
+	                while (!konts.eof()){
+	                        getline(konts,konta_numurs,',');
+	                        getline (konts, nauda_konta);
+
+                                double outt;
+                                stringstream stt;
+                                stt << nauda_konta;
+                                stt >> outt;
+
+                                cout<<outt;
+
+                                if(outt>nauda_nauda){
+									double  summa;
+                                    summa=outt-nauda_nauda;
+                                    cout<<konta_numurs<<endl;
+                                    cout<<summa;
+                                    output<<konta_numurs<<","<<summa;
+                                    time_t rawtime;
+                                    struct tm *timeinfo;
+                                    time ( &rawtime );
+                                    timeinfo = localtime ( &rawtime );
+                                    ofstream vesture("vesture.txt",ios::app);
+                                    vesture<<"Lietotajs "<<temp<<" nopirka bileti"<<","<<uzKurieni<<","<< asctime(timeinfo)<<endl;
+                                }
+                                        else{
+                                            cout<<"Nepietiek lidzekljus"<<endl;
+                                            break;
+                                            }
+                            }
+
+	            konts.close();
+	            output.close();
+	            sarakstss.close();
+	            remove("sarakstss.txt");
+	            remove(temp.c_str());
+	            rename("tempfile.txt",temp.c_str());
+                }
+		}
+
+
+
+		}
+
+        break;
+       }
+}
+}

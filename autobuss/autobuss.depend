@@ -1,0 +1,328 @@
+# depslib dependency file v1.0
+1527622524 source:e:\projectc++moj\autobuspravilnijj\autobuss\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+	"../menu.h"
+	"include\Lietotajs.h"
+	"include\Viesis.h"
+	"include\Admiin.h"
+	"include\Klients.h"
+	<time.h>
+
+1529079320 e:\projectc++moj\autobuspravilnijj\autobuss\menu.h
+
+1527531314 e:\projectc++moj\autobuspravilnijj\autobuss\include\lietotajs.h
+	<iostream>
+
+1527531314 e:\projectc++moj\autobuspravilnijj\autobuss\include\viesis.h
+	<Lietotajs.h>
+
+1529081880 source:e:\projectc++moj\autobuspravilnijj\autobuss\menu.cpp
+	<iostream>
+	"menu.h"
+	<windows.h>
+
+1527531314 source:e:\projectc++moj\autobuspravilnijj\autobuss\src\lietotajs.cpp
+	"Lietotajs.h"
+	<iostream>
+	<string>
+	<fstream>
+
+1527671928 source:e:\projectc++moj\autobuspravilnijj\autobuss\src\viesis.cpp
+	"Viesis.h"
+	"../menu.h"
+	"Lietotajs.h"
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<fstream>
+
+1529270952 source:e:\projectc++moj\autobuspravilnijj\autobuss\src\klients.cpp
+	"Klients.h"
+	<iostream>
+	<fstream>
+	"../includeKonts/Konts.h"
+	<string>
+	"../menu.h"
+	<windows.h>
+	<sstream>
+	<time.h>
+
+1529253938 e:\projectc++moj\autobuspravilnijj\autobuss\include\klients.h
+	<Lietotajs.h>
+
+1528395602 e:\projectc++moj\autobuspravilnijj\autobuss\include\admiin.h
+	<Lietotajs.h>
+
+1529271074 source:e:\projectc++moj\autobuspravilnijj\autobuss\src\admiin.cpp
+	"Admiin.h"
+	"../menu.h"
+	"Lietotajs.h"
+	"../includeMarsruti/Marsruti_reisi.h"
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<windows.h>
+	<fstream>
+	<cstring>
+
+1527622524 source:f:\projectc++moj\autobuspravilnijj\autobuss\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+	"../menu.h"
+	"include\Lietotajs.h"
+	"include\Viesis.h"
+	"include\Admiin.h"
+	"include\Klients.h"
+	<time.h>
+
+1527531314 f:\projectc++moj\autobuspravilnijj\autobuss\menu.h
+
+1527531314 f:\projectc++moj\autobuspravilnijj\autobuss\include\lietotajs.h
+	<iostream>
+
+1527531314 f:\projectc++moj\autobuspravilnijj\autobuss\include\viesis.h
+	<Lietotajs.h>
+
+1527671780 f:\projectc++moj\autobuspravilnijj\autobuss\include\admiin.h
+	<Lietotajs.h>
+
+1527622402 f:\projectc++moj\autobuspravilnijj\autobuss\include\klients.h
+	<Lietotajs.h>
+
+1527619216 source:f:\projectc++moj\autobuspravilnijj\autobuss\menu.cpp
+	<iostream>
+	"menu.h"
+	<windows.h>
+
+1527622412 source:f:\projectc++moj\autobuspravilnijj\autobuss\src\klients.cpp
+	"Klients.h"
+	<iostream>
+	<fstream>
+	<string>
+	"../menu.h"
+	<windows.h>
+	<sstream>
+	<time.h>
+
+1527531314 source:f:\projectc++moj\autobuspravilnijj\autobuss\src\lietotajs.cpp
+	"Lietotajs.h"
+	<iostream>
+	<string>
+	<fstream>
+
+1527671928 source:f:\projectc++moj\autobuspravilnijj\autobuss\src\viesis.cpp
+	"Viesis.h"
+	"../menu.h"
+	"Lietotajs.h"
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<fstream>
+
+1527671856 source:f:\projectc++moj\autobuspravilnijj\autobuss\src\admiin.cpp
+	"Admiin.h"
+	"../menu.h"
+	"Lietotajs.h"
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<windows.h>
+	<fstream>
+	<cstring>
+
+1527622524 source:d:\projectc++moj\autobuspravilnijj\autobuss\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+	"../menu.h"
+	"include\Lietotajs.h"
+	"include\Viesis.h"
+	"include\Admiin.h"
+	"include\Klients.h"
+	<time.h>
+
+1527531314 d:\projectc++moj\autobuspravilnijj\autobuss\menu.h
+
+1527531314 d:\projectc++moj\autobuspravilnijj\autobuss\include\lietotajs.h
+	<iostream>
+
+1527531314 d:\projectc++moj\autobuspravilnijj\autobuss\include\viesis.h
+	<Lietotajs.h>
+
+1527671780 d:\projectc++moj\autobuspravilnijj\autobuss\include\admiin.h
+	<Lietotajs.h>
+
+1527622402 d:\projectc++moj\autobuspravilnijj\autobuss\include\klients.h
+	<Lietotajs.h>
+
+1527687256 source:d:\projectc++moj\autobuspravilnijj\autobuss\menu.cpp
+	<iostream>
+	"menu.h"
+	<windows.h>
+
+1527688526 source:d:\projectc++moj\autobuspravilnijj\autobuss\src\klients.cpp
+	"Klients.h"
+	<iostream>
+	<fstream>
+	"../includeKonts/Konts.h"
+	<string>
+	"../menu.h"
+	<windows.h>
+	<sstream>
+	<time.h>
+
+1527531314 source:d:\projectc++moj\autobuspravilnijj\autobuss\src\lietotajs.cpp
+	"Lietotajs.h"
+	<iostream>
+	<string>
+	<fstream>
+
+1527671928 source:d:\projectc++moj\autobuspravilnijj\autobuss\src\viesis.cpp
+	"Viesis.h"
+	"../menu.h"
+	"Lietotajs.h"
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<fstream>
+
+1527686424 source:d:\projectc++moj\autobuspravilnijj\autobuss\src\admiin.cpp
+	"Admiin.h"
+	"../menu.h"
+	"Lietotajs.h"
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<windows.h>
+	<fstream>
+	<cstring>
+
+1527688804 source:d:\projectc++moj\autobuspravilnijj\autobuss\src\konts.cpp
+	"Konts.h"
+	<iostream>
+	"Admiin.h"
+	<iostream>
+	<fstream>
+	<string>
+	<windows.h>
+	<sstream>
+
+1527688570 d:\projectc++moj\autobuspravilnijj\autobuss\includekonts\konts.h
+	<string>
+
+1527688570 e:\projectc++moj\autobuspravilnijj\autobuss\includekonts\konts.h
+	<string>
+
+1529193512 source:e:\projectc++moj\autobuspravilnijj\autobuss\src\konts.cpp
+	"Konts.h"
+	<iostream>
+	"Admiin.h"
+	"Lietotajs.h"
+	<iostream>
+	<fstream>
+	<string>
+	<windows.h>
+	<sstream>
+
+1529192836 source:e:\projectc++moj\autobuspravilnijj\autobuss\src\marsruti_reisi.cpp
+	"Marsruti_reisi.h"
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+
+1528652914 e:\projectc++moj\autobuspravilnijj\autobuss\includemarsruti\marsruti_reisi.h
+	<string>
+
+1529312828 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\menu.cpp
+	<iostream>
+	"menu.h"
+	<windows.h>
+
+1529273010 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\menu.h
+
+1529273496 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\main.cpp
+	<stdlib.h>
+	<windows.h>
+	"../menu.h"
+	"include\Lietotajs.h"
+	"include\Viesis.h"
+	"include\Admiin.h"
+	"include\Klients.h"
+	<time.h>
+
+1529273010 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\include\lietotajs.h
+	<iostream>
+
+1529273010 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\include\viesis.h
+	<Lietotajs.h>
+
+1529309927 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\include\admiin.h
+	<Lietotajs.h>
+
+1529273010 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\include\klients.h
+	<Lietotajs.h>
+
+1529315296 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\src\klients.cpp
+	<iostream>
+	<fstream>
+	"../includeKonts/Konts.h"
+	<string>
+	"../menu.h"
+	<windows.h>
+	<sstream>
+	<time.h>
+
+1529273010 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\includekonts\konts.h
+	<string>
+
+1529302826 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\src\konts.cpp
+	<iostream>
+	"Admiin.h"
+	"Lietotajs.h"
+	<iostream>
+	<fstream>
+	<string>
+	<windows.h>
+	<sstream>
+
+1529302861 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\src\lietotajs.cpp
+	<iostream>
+	<string>
+	<fstream>
+
+1529303089 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\src\marsruti_reisi.cpp
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+
+1529303217 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\src\viesis.cpp
+	"../menu.h"
+	"Lietotajs.h"
+	<iostream>
+	<stdlib.h>
+	<string>
+	<sstream>
+	<fstream>
+
+1529312662 source:c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\src\admiin.cpp
+	"../menu.h"
+	"Lietotajs.h"
+	"../includeMarsruti/Marsruti_reisi.h"
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<windows.h>
+	<fstream>
+	<cstring>
+
+1529273010 c:\users\temp.rvt.001\desktop\autobuspravilnijj\autobuss\includemarsruti\marsruti_reisi.h
+	<string>
+

@@ -1,0 +1,2 @@
+1)Numurs: 25, Marsruts: Riga-Berline, Laiks: 23-24, Brauciena cena(parasta): 20 eiro, Bilesu skaits: 12 
+2)Numurs: 25, Marsruts: Riga-Maskava, Laiks: 20-24, Brauciena cena(parasta): 12 eiro, Bilesu skaits: 12 

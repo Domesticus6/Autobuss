@@ -1,0 +1,113 @@
+void Klients::meklesana(string personalID, string nosaukums){
+ string VilcienaNR;
+    string laiks;
+    string n;
+    string line;
+    int i, izvele;;
+    cout<<"Ievadiet pec kadiem parametriem jus gribat meklet noteikto marsrutu"<<endl;
+    cout<<"Ievadi vilciena numuru: ";
+    cin>>VilcienaNR;
+    ifstream file("saraksts.txt");
+    if (file.peek() == ifstream::traits_type::eof())
+            cout<<"tuks"<<endl;
+        else{
+    ofstream output("vilcienaNR.txt");
+    while(getline(file,line)){
+        if (line.find("Numurs "+VilcienaNR)!=string::npos){
+                cout<<line<<endl;
+                output<<line<<endl;
+        }
+    }
+    file.close();
+    output.close();
+    cout<<"Ievadi laiku 'piem. 10-21' ::";
+    cin>>laiks;
+    ifstream filee("vilcienaNR.txt");
+    if (filee.peek() == ifstream::traits_type::eof())
+            cout<<"tuks"<<endl;
+        else{
+            ofstream outputt("vilcienaLaiks.txt");
+            fflush(stdin);
+            i=0;
+            while (getline(filee,line)){
+                if(line.find("Laiks="+laiks)!=string::npos){
+                    i++;
+                    outputt<<i<<line<<endl;
+                    cout<<i<<line<<endl;
+                }
+            }
+            filee.close();
+            outputt.close();
+            int izvele;
+            string numurs;string laikss;string nauda;string uzKurieni;
+            cout<<"Gribi nopirkt bileti? 1-Ja 0-Ne::";
+            cin>>izvele;
+            if(izvele){
+            ifstream vilciena_laiks("vilcienaLaiks.txt");
+            cout<<"izveles bileti::";
+            int line_number_now;
+            int line_number_chose;
+            cin>>line_number_chose;
+            fflush(stdin);
+            line_number_now=0;
+            while(getline(vilciena_laiks,line)){
+                line_number_now++;
+                    if (line_number_now==line_number_chose){
+                        getline(vilciena_laiks,numurs,',');
+                        getline(vilciena_laiks,uzKurieni,',');
+                        getline(vilciena_laiks,laikss,',' );
+                        getline(vilciena_laiks,nauda);
+
+                        stringstream st;
+                        st << nauda;
+                        double out;
+                        st >> out;
+
+                        string konta_numurs;
+                        string nauda_konta;
+                         string k;
+                         string f;
+                         f=personalID+"-Konts.txt";
+                         string nosaukuma;
+                         ifstream konts(string(string(f)).c_str());
+                         string s;
+                         ofstream outputttt("tempfile.txt");
+                            while (!konts.eof()){
+                                    getline(konts,konta_numurs,',');
+                                    getline (konts, nauda_konta);
+                                    stringstream stt;
+                                    stt << nauda_konta;
+                                    double outt;
+                                    stt >> outt;
+                                    double  summa;
+                                    if(outt<out)
+                                        cout<<"Nepietiek lidzekljus"<<endl;
+
+                                        else {
+                                                summa=outt-out;
+                                                cout<<konta_numurs<<endl;
+                                                cout<<summa;
+                                                outputttt<<konta_numurs<<","<<summa;
+                                                time_t rawtime;
+                                                struct tm *timeinfo;
+                                                time ( &rawtime );
+                                                timeinfo = localtime ( &rawtime );
+                                                ofstream vesture("vesture.txt",ios::app);
+                                                vesture<<"Lietotajs "<<f<<" nopirka bileti"<<","<<uzKurieni<<","<< asctime(timeinfo)<<endl;
+                                            }
+                                }
+            konts.close();
+            outputttt.close();
+            remove(f.c_str());
+            rename("tempfile.txt",f.c_str());
+                                                }
+                }
+
+
+
+            }
+
+                }
+        }
+
+}
