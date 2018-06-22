@@ -46,4 +46,8 @@ Kas nestrada(kludas,programmas ficas):
 	3)Gadijuma ja pec registresanas jus nevarat ieejiet akkaunta, tad notika datu parslodze, tad user faila un login faila vajag izdzest user vai useru, vai ari izdarit projekta rebuild vai clean, tad vajadzetu visam stradat, ja ne tad restartejiet codeblock vai pasu datoru;
 	4)Var but problemas ar iziesanu, no kaut kada menu(tas tika ieraudzits marsrutu menu pie latvijas braucienam);
 	5)Ja jus kaut ko neievadijat pareizi ne pec nosacijumiem iekavas, tad programma var nokrasoties!;
+	6)Jus varat izveidot marsrutu ar jebkadu laiku!;
+	7)Nav ari parbaudes uz biletu skaitu pec bilesu pirksanas, ir tikai pec, kad jau tiek mazinats bilesu skaits(nepaspeju)!		
+	8)Meklesanas atkartojums(prieks biletes rezervacijas) strada tikai ar 0 un 1(ludzu lasiet iekavas, ko jums vajag ievadit);		
+	9)Ja jums nepietiek naudas, tad fails(konts) saturs izdsesas!;
 Ja compilesanas bridi izvada kludu undefined_reference, tad izdariet rebuild vai clean.
